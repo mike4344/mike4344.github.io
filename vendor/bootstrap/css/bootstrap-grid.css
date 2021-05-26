@@ -15,6 +15,19 @@ html {
   box-sizing: inherit;
 }
 
+  html {
+    scroll-behavior: smooth;
+  }
+  *::-webkit-scrollbar {
+    width: 0.3rem;
+  }
+  *::-webkit-scrollbar-track {
+    background: #1d2228;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: #20c997;
+  }
+
 .container,
 .container-fluid,
 .container-sm,
