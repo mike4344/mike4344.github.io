@@ -5,7 +5,7 @@
    Template URL: http://demo.harnishdesign.net/html/simone
    Author URL: https://themeforest.net/user/harnishdesign
    File Description : Main css file of the template
-	
+
 =================================================
   Table of Contents
 =================================================
@@ -35,7 +35,7 @@
 
 =======================================================*/
 /* =================================== */
-/*  1. Basic Style 
+/*  1. Basic Style
 /* =================================== */
 body, html {
   height: 100%;
@@ -45,6 +45,15 @@ body {
   background: #dddddd;
   color: #4c4d4d;
   font-family: "Poppins", sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+body::-webkit-scrollbar-track {
+  background: #1d2228;
+}
+body::-webkit-scrollbar-thumb {
+  background: #20c997;
 }
 
 /*-------- Preloader --------*/
