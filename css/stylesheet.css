@@ -46,13 +46,13 @@ body {
   color: #4c4d4d;
   font-family: "Poppins", sans-serif;
 }
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 0.3rem;
 }
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
   background: #1d2228;
 }
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background: #20c997;
 }
 
