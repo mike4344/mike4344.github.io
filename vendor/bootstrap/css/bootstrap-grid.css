@@ -14,17 +14,13 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
-  html {
-    scroll-behavior: smooth;
-  }
-  *::-webkit-scrollbar {
+  body::-webkit-scrollbar {
     width: 0.3rem;
   }
-  *::-webkit-scrollbar-track {
+  body::-webkit-scrollbar-track {
     background: #1d2228;
   }
-  *::-webkit-scrollbar-thumb {
+  body::-webkit-scrollbar-thumb {
     background: #20c997;
   }
 
