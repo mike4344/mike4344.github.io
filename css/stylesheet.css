@@ -55,6 +55,15 @@ body {
 *::-webkit-scrollbar-thumb {
   background: #20c997;
 }
+nav::-webkit-scrollbar {
+  width: 0.3rem;
+}
+nav::-webkit-scrollbar-track {
+  background: #1d2228;
+}
+nav::-webkit-scrollbar-thumb {
+  background: #20c997;
+}
 
 /*-------- Preloader --------*/
 .preloader {
