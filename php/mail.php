@@ -20,7 +20,7 @@ require './phpmailer/src/SMTP.php';
   // Receiver's Email
 --------------------------------------------- */
 
-$toEmail = "your-email@website.com"; // Replace Your Email Address
+$toEmail = "mikemihalchik@gmail.com"; // Replace Your Email Address
 
 
 /* --------------------------------------------
@@ -66,7 +66,7 @@ if (filter_var($toEmail, FILTER_VALIDATE_EMAIL)) {
 
 	$mail->isHTML(true);
 	$mail->CharSet = 'UTF-8';
-	
+
 	$mail->Subject = $subject . ' [' . $_POST['name'] . ']';
 
 	$mail->Body = '<table align="center" border="0" cellpadding="0" cellspacing="20" height="100%" width="100%">
@@ -89,7 +89,7 @@ if (filter_var($toEmail, FILTER_VALIDATE_EMAIL)) {
 							</td>
 						</tr>
 					</table>';
-	
+
 	/*-------------------------------------------------
 		reCaptcha
 	---------------------------------------------------*/
@@ -125,7 +125,7 @@ if (filter_var($toEmail, FILTER_VALIDATE_EMAIL)) {
 	$forcerecap = (!empty($_POST['force_recaptcha']) && $_POST['force_recaptcha'] != 'false' ) ? true : false;
 	if (isset($g_response->action) && $g_response->action == 'contact') {
 		if (isset($g_response->success) && $g_response->success == true && $g_response->action == 'contact') {
-			
+
 		} else if ($forcerecap) {
 			if (!isset($_POST['g-recaptcha-response'])) {
 				echo json_encode(array('response' => 'error', 'Message' => '<div class="alert alert-danger alert-dismissible fade show text-3 text-left"><i class="fa fa-times-circle"></i> ' . $message['recaptcha_error'] . '<button type="button" class="close font-weight-500 mt-1" data-dismiss="alert">&times;</button></div>'));
