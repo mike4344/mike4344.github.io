@@ -59,10 +59,12 @@ if (isset($_POST['name'])) {
 $mail = new PHPMailer(true);
 
 /* Add your SMTP Codes after this Line */
+$mail->isSMTP();
+$mail->SMTPDebug = 0;
 $mail->Host ='smtp.gmail.com';
 $mail->Port =587;
 $mail->SMTPAuth=true;
-$mail->SMTPAuth='tls';
+$mail->SMTPSecure='tls';
 $mail->Username = 'noreplymikemihalchik@gmail.com';
 $mail->Password = 'SuperSecurePassw0rd!';
 
