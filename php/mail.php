@@ -7,7 +7,7 @@
 	Website: 		http://www.harnishdesign.net
 
 ----------------------------------------------------*/
-
+Access-Control-Allow-Headers: *
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -27,7 +27,7 @@ $toEmail = "mikemihalchik@gmail.com"; // Replace Your Email Address
   // Sender's Email
 --------------------------------------------- */
 
-$fromEmail = "no-reply@mikemihalchik.com";  // Replace Company's Email Address (preferably currently used Domain Name)
+$fromEmail = "noreplymikemihalchik@gmail.com";  // Replace Company's Email Address (preferably currently used Domain Name)
 $fromName = "Mike Mihalchik"; // Replace Company Name
 
 
