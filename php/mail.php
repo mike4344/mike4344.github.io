@@ -27,8 +27,8 @@ $toEmail = "mikemihalchik@gmail.com"; // Replace Your Email Address
   // Sender's Email
 --------------------------------------------- */
 
-$fromEmail = "no-reply@website.com";  // Replace Company's Email Address (preferably currently used Domain Name)
-$fromName = "Company Name"; // Replace Company Name
+$fromEmail = "no-reply@mikemihalchik.com";  // Replace Company's Email Address (preferably currently used Domain Name)
+$fromName = "Mike Mihalchik"; // Replace Company Name
 
 
 /* --------------------------------------------
@@ -54,6 +54,12 @@ if (isset($_POST['name'])) {
 $mail = new PHPMailer(true);
 
 /* Add your SMTP Codes after this Line */
+$mail->Host ='smtp.gmail.com';
+$mail->Port =587;
+$mail->SMTPAuth=true;
+$mail->SMTPAuth='tls';
+$mail->Username = 'noreplymikemihalchik@gmail.com';
+$mail->Password = 'SuperSecurePassw0rd!';
 
 
 // End of SMTP
