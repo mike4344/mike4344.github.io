@@ -8,11 +8,11 @@
 
 ----------------------------------------------------*/
 
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Credentials: true ");
-header("Access-Control-Allow-Methods: OPTIONS, GET, POST");
-header("Access-Control-Allow-Headers: Content-Type, Depth, User-Agent, X-File-Size,
-    X-Requested-With, If-Modified-Since, X-File-Name, Cache-Control");
+// header("Access-Control-Allow-Origin: *");
+// header("Access-Control-Allow-Credentials: true ");
+// header("Access-Control-Allow-Methods: OPTIONS, GET, POST");
+// header("Access-Control-Allow-Headers: Content-Type, Depth, User-Agent, X-File-Size,
+//     X-Requested-With, If-Modified-Since, X-File-Name, Cache-Control");
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -32,7 +32,7 @@ $toEmail = "mikemihalchik@gmail.com"; // Replace Your Email Address
   // Sender's Email
 --------------------------------------------- */
 
-$fromEmail = "noreplymikemihalchik@gmail.com";  // Replace Company's Email Address (preferably currently used Domain Name)
+$fromEmail = "noreply@mike4344.github.io/";  // Replace Company's Email Address (preferably currently used Domain Name)
 $fromName = "Mike Mihalchik"; // Replace Company Name
 
 
@@ -59,14 +59,14 @@ if (isset($_POST['name'])) {
 $mail = new PHPMailer(true);
 
 /* Add your SMTP Codes after this Line */
-$mail->isSMTP();
-$mail->SMTPDebug = 0;
-$mail->Host ='smtp.gmail.com';
-$mail->Port =587;
-$mail->SMTPAuth=true;
-$mail->SMTPSecure='tls';
-$mail->Username = 'noreplymikemihalchik@gmail.com';
-$mail->Password = 'SuperSecurePassw0rd!';
+// $mail->isSMTP();
+// $mail->SMTPDebug = 0;
+// $mail->Host ='smtp.gmail.com';
+// $mail->Port =587;
+// $mail->SMTPAuth=true;
+// $mail->SMTPSecure='tls';
+// $mail->Username = 'noreplymikemihalchik@gmail.com';
+// $mail->Password = 'SuperSecurePassw0rd!';
 
 
 // End of SMTP
