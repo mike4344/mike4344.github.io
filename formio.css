@@ -1,0 +1,61 @@
+.card-body {
+    padding: 0;
+    position:relative;
+}
+.form-group {
+    margin: 0;
+    border: solid 1px #CED4DA;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: space-around;
+}
+.form-control {
+    border: none;
+    background-color: transparent;
+}
+.form-controller {
+    margin: 10;
+}
+.card-header.bg-default {
+    padding: .25em
+}
+.btn {
+    background-color: #E9ECEF;
+    color: #495057;
+    border: 1px solid #CED4DA;
+    border-radius: 6px;
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.input-group-text{
+    border: 1px solid  #CED4DA;
+    border-radius: 6px;
+    margin: 0px;
+}
+.col-form-label{
+   padding: calc(.375rem + 1px);
+}
+.input-group-append{
+   margin: 0px;
+}
+.input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text{
+   border-radius: 6px;
+}
+.col-md-6 {
+    padding: 0px;
+}
+.row {
+    height: 100%;
+}
+.formio-component-circuitLinePole, .formio-component-parkingLocation {
+    height:100%;
+}
+
+
+
+
+
+
